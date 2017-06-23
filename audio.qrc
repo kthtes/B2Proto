@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Summer.mp3</file>
+        <file>yin0.m4a</file>
+    </qresource>
+</RCC>
