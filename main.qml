@@ -7,7 +7,7 @@ ApplicationWindow {
     visible: true
     width: 640
     height: 480
-    title: qsTr("B2 Prototype")
+    title: qsTr("B2 Prototype - B2原型测试")
 
     SwipeView {
         id: swipeView
@@ -19,7 +19,7 @@ ApplicationWindow {
 
         Page {
             Label {
-                text: qsTr("Second page")
+                text: qsTr("Second page - 第二页")
                 anchors.centerIn: parent
             }
             Audio{
@@ -27,7 +27,7 @@ ApplicationWindow {
             }
             RowLayout{
                 Button{
-                    text: qsTr("Play MP3")
+                    text: qsTr("Play MP3 - 播放MP3")
                     onClicked: {
                         audio1.stop()
                         audio1.source='qrc:/Summer.mp3'
@@ -35,7 +35,7 @@ ApplicationWindow {
                     }
                 }
                 Button{
-                    text: qsTr("Play AAC")
+                    text: qsTr("Play AAC - 播放AAC")
                     onClicked: {
                         audio1.stop()
                         audio1.source='qrc:/yin0.m4a'
@@ -50,10 +50,10 @@ ApplicationWindow {
         id: tabBar
         currentIndex: swipeView.currentIndex
         TabButton {
-            text: qsTr("Video Test")
+            text: qsTr("Video Test - 视频测试")
         }
         TabButton {
-            text: qsTr("Audio Test")
+            text: qsTr("Audio Test - 音频测试")
         }
     }
 }
